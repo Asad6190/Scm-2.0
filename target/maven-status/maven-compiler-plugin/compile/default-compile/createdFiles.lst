@@ -1,2 +1,8 @@
-com\scm\Scm20Application.class
+com\scm\entities\SocialLink$SocialLinkBuilder.class
 com\scm\controller\PageController.class
+com\scm\entities\User.class
+com\scm\Scm20Application.class
+com\scm\entities\Contact.class
+com\scm\entities\SocialLink.class
+com\scm\entities\User$UserBuilder.class
+com\scm\entities\Providers.class
