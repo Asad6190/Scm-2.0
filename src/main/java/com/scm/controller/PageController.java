@@ -6,9 +6,11 @@ import com.scm.helpers.Message;
 import com.scm.helpers.MessageType;
 import com.scm.services.UserService;
 import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -56,20 +58,23 @@ public class PageController {
         UserForm userForm = new UserForm();
 
         model.addAttribute("userForm", userForm);
-        userForm.setName("Asad");
         System.out.println("Register Page handler");
         return "register";
     }
 
     //processing form
     @RequestMapping(value = "/do-register", method = RequestMethod.POST)
-    public String processRegister(@ModelAttribute UserForm userForm, HttpSession session) {
+    public String processRegister(@Valid @ModelAttribute UserForm userForm, BindingResult bindingResult, HttpSession session) {
 
 
         System.out.println("Process Register Page");
         //fetch form data
 
         //validate form data
+        if (bindingResult.hasErrors()){
+            return "register";
+        }
+
 
         //save to database
 //        UserForm --> User
