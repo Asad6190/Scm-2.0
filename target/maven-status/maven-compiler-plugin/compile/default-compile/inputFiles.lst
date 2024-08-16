@@ -1,6 +1,16 @@
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\config\SecurityConfig.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\controller\PageController.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\controller\UserController.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\entities\Contact.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\entities\Providers.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\entities\SocialLink.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\entities\User.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\forms\UserForm.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\helpers\Message.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\helpers\MessageType.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\helpers\ResourceNotFoundException.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\helpers\SessionHelper.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\repositories\UserRepo.java
 D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\Scm20Application.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\services\impl\UserServiceImpl.java
+D:\Asad\Programing\SmartContactManager\scm2-0\src\main\java\com\scm\services\UserService.java
