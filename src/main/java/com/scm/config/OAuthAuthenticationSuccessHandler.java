@@ -89,10 +89,10 @@ public class OAuthAuthenticationSuccessHandler implements AuthenticationSuccessH
             user.setName(name);
             user.setProviderUserId(providerUserId);
             user.setProvider(Providers.GITHUB);
-
             user.setAbout("This account is created using github");
+
         } else if (authorizedClientRegistrationId.equalsIgnoreCase("linkedin")) {
-                    //linkedin kay liye
+            //linkedin kay liye
         } else {
             logger.info("OAuthAuthenicationSuccessHandler: Unknown provider");
         }
@@ -101,7 +101,6 @@ public class OAuthAuthenticationSuccessHandler implements AuthenticationSuccessH
         // facebook
         // facebook attributes
         // linkedin
-
         /*
          *
          *

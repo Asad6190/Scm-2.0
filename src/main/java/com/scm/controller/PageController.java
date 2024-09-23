@@ -51,11 +51,15 @@ public class PageController {
         return "contact";
     }
 
+//    this is for login page
+
     @GetMapping("/login")
     public String login() {
         System.out.println("Login Page handler");
         return "login";
     }
+
+//    registration view
 
     @GetMapping("/register")
     public String register(Model model) {
@@ -67,7 +71,8 @@ public class PageController {
         return "register";
     }
 
-    //processing form
+
+    //registration processing form
     @RequestMapping(value = "/do-register", method = RequestMethod.POST)
     public String processRegister(@Valid @ModelAttribute UserForm userForm, BindingResult bindingResult, HttpSession session) {
 
@@ -100,7 +105,7 @@ public class PageController {
 //        user.setAbout(userForm.getAbout());
 //        user.setPhoneNumber(userForm.getPhoneNumber());
 //        user.setProfilePic("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdefault-profile-picture&psig=AOvVaw0nAabHFYNXOQhxYVKw9cV_&ust=1723717172242000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCLi7ioGh9IcDFQAAAAAdAAAAABAE");
-        User savedUser = userService.saveUser(user);
+        User savedUser =  userService.saveUser(user);
         System.out.println("User Saved!");
 
         //message="Registration Success"
